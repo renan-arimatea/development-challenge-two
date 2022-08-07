@@ -18,17 +18,18 @@ const HomePage = () => {
             {/* box de conteúdos da direita da homepage */}
             <BoxRight>
                 <MsgBox>
-                <input // campo de usuário
-                    type="text"
-                    placeholder="Usuário"
-                    required
-                />
-                <input // campo de senha
-                    type="password"
-                    placeholder="Senha"
-                    required
-                />
-                <button type="submit">Acessar<FaAngleRight className="icon" /></button>
+                    <h3>Login</h3>
+                    <input // campo de usuário
+                        type="text"
+                        placeholder="Usuário"
+                        required
+                    />
+                    <input // campo de senha
+                        type="password"
+                        placeholder="Senha"
+                        required
+                    />
+                    <button type="submit">Acessar<FaAngleRight className="icon" /></button>
                 </MsgBox>
                 <ImgBox src={doctorimg} alt="Médicos MedClinic" />
             </BoxRight>

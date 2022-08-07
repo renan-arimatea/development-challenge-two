@@ -4,6 +4,7 @@ import {DatePicker} from 'rsuite'
 const DateTime = () => {
     return (
        
+        // componente que mostra a data e a hora local
         <DatePicker 
             format="dd / MM / yyyy - HH:mm:ss" 
             readOnly

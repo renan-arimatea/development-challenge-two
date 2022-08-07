@@ -84,7 +84,8 @@ export const MsgBox = styled.div`
     flex-direction: column;
     color: #FFFFFF;
     background: #1F3A68;
-    padding: 1rem 2rem 4rem 4rem;
+    border: 1px solid #4eb1cb;
+    padding: .1rem 2rem 4rem 4rem;
 
     position: absolute;
     top: 6rem;
@@ -93,6 +94,12 @@ export const MsgBox = styled.div`
     justify-content: center;
     text-align: center;
     align-items: center;
+
+    h3 {
+        background-color: #4EB1CB;
+        margin: .5rem;
+        padding: .2rem 1rem
+    }
 
     input {
         margin: .4rem;
@@ -151,8 +158,8 @@ export const MsgBox = styled.div`
 // imagem dos médicos
 export const ImgBox = styled.img`
 
-    max-width: 770px;
+    max-width: 730px;
     position: absolute;
     bottom: -7.5rem;
-    right: 0rem;
+    right: 2rem;
 `
