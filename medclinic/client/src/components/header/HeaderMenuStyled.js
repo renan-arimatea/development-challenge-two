@@ -17,4 +17,51 @@ export const MenuContainer = styled.div`
         margin-left: 1rem;
     }
 
+    // estilização das reder sociais
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+
+        a {
+            font-size: 1.5rem;
+            padding: .3rem;
+            text-decoration: none;
+            color: #fff;
+
+            :hover {
+                transform: scale(1.15);
+                color: #1F3A68;
+                cursor: pointer;
+                transition: .5s linear
+            }
+        }
+
+        .btn-ins {
+            :hover {
+                color: #C54669;
+            }
+        }
+
+        .btn-fac {
+            :hover {
+                color: #395599;
+            }
+        }
+
+        .btn-lin {
+            :hover {
+                color: #0A63BC;
+            }
+
+        }
+
+        .btn-twi {
+            :hover {
+                color: #34B3F7;
+            }
+
+        }
+    }
+
 `

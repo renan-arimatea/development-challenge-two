@@ -17,7 +17,7 @@ export const FooterContainer = styled.footer`
    }
 
    li {
-    font-size: 1rem;
+    font-size: .88rem;
     margin-left: 2rem;
     padding-bottom: 2rem;
    }
