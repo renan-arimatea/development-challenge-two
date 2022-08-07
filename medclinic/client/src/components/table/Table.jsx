@@ -8,7 +8,7 @@ const Table = () => {
      //função que baixa a lista da api
     const fetchData = async () => {
         try {
-            const res = await fetch('http://localhost:3001/getCard')
+            const res = await fetch('http://localhost:3001/patients')
             const data = await res.json();
             setPatients(data);
             console.log(data);

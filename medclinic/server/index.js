@@ -31,7 +31,7 @@ app.post('/register', (req, res) => {
 
 })
 
-app.get('/getCard', (req, res) => {
+app.get('/patients', (req, res) => {
     let SQL = "SELECT * FROM pacientes";
 
     db.query(SQL, (err, result) => {
