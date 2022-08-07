@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import {GoToRegister} from '../../routes/RouteFunction';
+import {GoToHome, GoToRegister} from '../../routes/RouteFunction';
 import {FaPlusCircle} from 'react-icons/fa';
+import {ImExit} from 'react-icons/im';
 import { ListContainer } from './PatientsListPageStyled';
 import Table from "../../components/table/Table"
 
@@ -11,7 +12,10 @@ const PatientsListPage = () => {
 
     return (
         <ListContainer>
-            <button onClick={() => GoToRegister(navigate)}><FaPlusCircle/> Incluir</button>
+            <div>
+                <button onClick={() => GoToRegister(navigate)}><FaPlusCircle/> Incluir</button>
+                <button className='exit' onClick={() => GoToHome(navigate)}><ImExit/> Sair</button>
+            </div>
             <Table/>  
         </ListContainer>
     )

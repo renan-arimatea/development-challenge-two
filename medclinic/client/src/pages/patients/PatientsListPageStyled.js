@@ -24,4 +24,20 @@ export const ListContainer = styled.div`
         }
     }
 
+    .exit {
+        background: red;
+        color: white;
+
+        position: absolute;
+        right: 1rem;
+
+        :hover {
+            cursor: pointer;
+            transform: scale(1.15);
+            transition: .3s;
+            background-color: #910000;
+            color: #FFFFFF;
+        }
+    }
+
 `

@@ -5,3 +5,7 @@ export const GoToRegister = (navigate) => {
 export const GoToPatientsList = (navigate) => {
     navigate('/patients');
 }
+
+export const GoToHome = (navigate) => {
+    navigate('/');
+}
