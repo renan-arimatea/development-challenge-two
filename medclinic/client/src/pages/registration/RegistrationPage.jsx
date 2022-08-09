@@ -20,9 +20,12 @@ const RegistrationPage = () => {
 
     }
 
-    const handleClickButton = () => {
+    const handleClickButton = (e) => {
 
         // valida se todos os campos foram preenchidos e validados antes de subir para po banco de dados
+
+        // e.preventDefault()
+
         let inputs = document.getElementsByClassName('required');
         let len = inputs.length;
         let valid = true;

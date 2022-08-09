@@ -1,7 +1,7 @@
 import React from "react";
 import doctorimg from "../../assets/doctor.png"
 import logo2 from "../../assets/medclinic-logo.png"
-import { BlueRec, BoxLeft, BoxRight, HomeContainer, ImgBox, LogoBox, MsgBox } from "./HomePageStyled";
+import { BlueRec, BoxLeft, BoxRight, HomeContainer, ImgBox, LogoBox } from "./HomePageStyled";
 import LoginForm from "../../components/login/LoginForm";
 
 const HomePage = () => {

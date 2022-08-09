@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import { FaAngleRight } from 'react-icons/fa';
 import { LoginBox } from "./LoginFormStyled";
+import {GoToPatientsList} from '../../routes/RouteFunction'
 
 const LoginForm = () => {
+
+    const navigate = useNavigate();
 
     return (
         <LoginBox>
@@ -17,7 +21,7 @@ const LoginForm = () => {
                 placeholder="Senha"
                 required
             />
-            <button type="submit">Acessar<FaAngleRight className="icon" /></button>
+            <button type="submit" onClick={()=>GoToPatientsList(navigate)}>Acessar<FaAngleRight className="icon" /></button>
         </LoginBox>
     )
 }
