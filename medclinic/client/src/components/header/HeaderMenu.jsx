@@ -12,10 +12,10 @@ const HeaderMenu = () => {
             <img src={logo} alt="Logo MedClinic" />
             
            <nav>
-                <a href="https://www.instagram.com" className="btn-ins" target="_blank"><FaInstagramSquare/></a>
-                <a href="https://www.facebook.com" className="btn-fac" target="_blank"><FaFacebookSquare/></a>
-                <a href="https://www.linkedin.com" className="btn-lin" target="_blank"><FaLinkedin/></a>
-                <a href="https://www.linkedin.com" className="btn-twi" target="_blank"><FaTwitterSquare/></a>
+                <a href="https://www.instagram.com" className="btn-ins" target="_blank" rel="noreferrer"><FaInstagramSquare/></a>
+                <a href="https://www.facebook.com" className="btn-fac" target="_blank" rel="noreferrer"><FaFacebookSquare/></a>
+                <a href="https://www.linkedin.com" className="btn-lin" target="_blank" rel="noreferrer"><FaLinkedin/></a>
+                <a href="https://www.linkedin.com" className="btn-twi" target="_blank" rel="noreferrer"><FaTwitterSquare/></a>
            </nav>
             
         </MenuContainer>
