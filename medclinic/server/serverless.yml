@@ -1,0 +1,49 @@
+service: patientsapi
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: dev
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - ec2:CreateNetworkInterface
+        - ec2:DescribeNetworkInterfaces
+        - ec2:DeleteNetworkInterface
+      Resource:
+        - "*"
+functions:
+  GetPatients:
+    handler: handler.getPatients
+    events:
+      - http:
+          path: /
+          method: get
+          cors: true
+    vpc:
+      securityGroupIds:
+        - sg-012e8794c1fa2093b
+      subnetIds:
+        - subnet-09826c87a71ecfc18
+        - subnet-03d7726670e5a3885
+        - subnet-03852f2e50c00b645
+        - subnet-0a35824e2e5450b47
+        - subnet-04a16c29a1fb4dba3
+        - subnet-0c96ac3355ecb7c50
+  PostPatients:
+    handler: handler.postPatients
+    events:
+      - http:
+          path: /
+          method: post
+          cors: true
+    vpc:
+      securityGroupIds:
+        - sg-012e8794c1fa2093b
+      subnetIds:
+        - subnet-09826c87a71ecfc18
+        - subnet-03d7726670e5a3885
+        - subnet-03852f2e50c00b645
+        - subnet-0a35824e2e5450b47
+        - subnet-04a16c29a1fb4dba3
+        - subnet-0c96ac3355ecb7c50
