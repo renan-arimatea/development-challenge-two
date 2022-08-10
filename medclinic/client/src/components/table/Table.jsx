@@ -19,7 +19,7 @@ const Table = (props) => {
 
     //função que baixa a lista da api
     useEffect(() =>{
-        axios.get('http://localhost:3001/patients')
+        axios.get('http://localhost:3001/patients') // https://lq78iad5rk.execute-api.us-east-1.amazonaws.com/patients
         
         .then((res) => {
             setPatients(res.data)

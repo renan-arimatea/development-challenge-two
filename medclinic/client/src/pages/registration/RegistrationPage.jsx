@@ -38,7 +38,7 @@ const RegistrationPage = () => {
         } else { 
 
             // envia os dados do formulário para o banco de dados
-            axios.post('http://localhost:3001/register', {
+            axios.post('http://localhost:3001/register', { //https://lq78iad5rk.execute-api.us-east-1.amazonaws.com/patients
                 nome: values.nome,
                 data_nascimento: values.data_nascimento,
                 email: values.email,
