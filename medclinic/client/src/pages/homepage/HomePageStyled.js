@@ -8,7 +8,7 @@ background-image: url(img/home-background.png);
 background-position: center;
 background-attachment: fixed;
 background-repeat: no-repeat;
-background-size: cover;
+background-size: auto;
 
 display: flex;
 height: 100vh;

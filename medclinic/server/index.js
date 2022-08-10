@@ -40,6 +40,25 @@ app.get('/patients', (req, res) => {
     })
 })
 
+app.put('/edit', (req, res) => {
+    const {idpacientes} = req.body;
+    const {nome} = req.body;
+    const {data_nascimento} = req.body;
+    const {email} = req.body;
+    const {cep} = req.body;
+    const {rua} = req.body;
+    const {numero} = req.body;
+    const {bairro} = req.body;
+    const {cidade} = req.body;
+
+    let SQL = "UPDATE pacientes SET nome = ?, data_nascimento = ?, email = ?, cep = ?,rua = ?, numero = ?, bairro = ?, cidade = ? WHERE idpacientes = ?";
+
+    db.query(SQL, [idpacientes, nome, data_nascimento, email, cep, rua, numero, bairro, cidade], (err, result) => {
+        if (err) console.log(err);
+        else res.send(result);
+    })
+})
+
 app.listen(3001, () =>{
     console.log('Server running at http://localhost:3001')
 })

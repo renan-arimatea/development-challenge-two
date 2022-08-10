@@ -39,14 +39,14 @@ const RegistrationPage = () => {
 
             // envia os dados do formulário para o banco de dados
             axios.post('http://localhost:3001/register', {
-                nome: values.name,
-                data_nascimento: values.date,
+                nome: values.nome,
+                data_nascimento: values.data_nascimento,
                 email: values.email,
                 cep: values.cep,
-                rua: values.street,
-                numero: values.number,
-                bairro: values.district,
-                cidade: values.city,
+                rua: values.rua,
+                numero: values.numero,
+                bairro: values.bairro,
+                cidade: values.cidade,
 
             }).then((response) => {
                 console.log(response);
@@ -61,13 +61,13 @@ const RegistrationPage = () => {
                 <legend>Cadastro</legend>
 
                 <div>
-                    <label htmlFor="name">Nome Completo: </label>
-                    <input id='name' type="text" name='name' placeholder='nome completo do paciente' required onChange={handleChangeValues}/>
+                    <label htmlFor="nome">Nome Completo: </label>
+                    <input id='nome' type="text" name='nome' placeholder='nome completo do paciente' required onChange={handleChangeValues}/>
                 </div>
 
                 <div>
-                    <label htmlFor="date">Data de Nascimento: </label>
-                    <input id='date' type="text" pattern="\d{2}/\d{2}/\d{4}" name='date' placeholder='dd/mm/aaaa' required onChange={handleChangeValues}/>
+                    <label htmlFor="data_nacimiento">Data de Nascimento: </label>
+                    <input id='data_nascimento' type="text" pattern="\d{2}/\d{2}/\d{4}" name='data_nascimento' placeholder='dd/mm/aaaa' required onChange={handleChangeValues}/>
                 </div>
 
                 <div>
@@ -81,23 +81,23 @@ const RegistrationPage = () => {
                 </div>
 
                 <div>
-                    <label htmlFor="street">Rua: </label>
-                    <input id='street' type="text" name='street' placeholder="ex: Rua Sta Cruz" required onChange={handleChangeValues}/>
+                    <label htmlFor="rua">Rua: </label>
+                    <input id='rua' type="text" name='rua' placeholder="ex: Rua Sta Cruz" required onChange={handleChangeValues}/>
                 </div>
 
                 <div>
-                    <label htmlFor="number">Número: </label>
-                    <input id='number' type="text" name='number' placeholder='ex: 122' required onChange={handleChangeValues}/>
+                    <label htmlFor="numero">Número: </label>
+                    <input id='numero' type="text" name='numero' placeholder='ex: 122' required onChange={handleChangeValues}/>
                 </div>
 
                 <div>
-                    <label htmlFor="district">Bairro: </label>
-                    <input id='district' type="text" name='district' placeholder='ex: Centro' required onChange={handleChangeValues}/>
+                    <label htmlFor="bairro">Bairro: </label>
+                    <input id='bairro' type="text" name='bairro' placeholder='ex: Centro' required onChange={handleChangeValues}/>
                 </div>
 
                 <div>
-                    <label htmlFor="city">Cidade: </label>
-                    <input id='city' type="text" name='city' placeholder="ex: São Paulo" required onChange={handleChangeValues}/>
+                    <label htmlFor="cidade">Cidade: </label>
+                    <input id='cidade' type="text" name='cidade' placeholder="ex: São Paulo" required onChange={handleChangeValues}/>
                 </div>
 
                 <Btn>
